@@ -45,9 +45,14 @@ h2 {
 }
 
 #center>div:hover{
-    background-color: green;
+    background-color: red;
     color: white;
     font-size: 32px;
+}
+
+#center>div:active{
+    background-color: green;
+    scale: 4;
 }
 
 
