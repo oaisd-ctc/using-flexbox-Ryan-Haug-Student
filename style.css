@@ -1,0 +1,135 @@
+body {
+    background-color: grey;
+    overflow: hidden
+}
+
+h2 {
+    margin: 5px;
+}
+
+.flex {
+    display: flex;
+    background-color: darkgrey;
+    margin: 10px;
+}
+
+#head {
+    justify-content: space-between;
+}
+
+#head>div {
+    background-color: lightgrey;
+    margin: 10px;
+    flex: 1;
+}
+
+#head>div:hover{
+    background-color: aquamarine;
+}
+
+#center {
+    background-color: darkgrey;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+#center>div {
+    background-color: lightgrey;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    transition: .2s;
+}
+
+#center>div:hover{
+    background-color: green;
+    color: white;
+    font-size: 32px;
+}
+
+
+/* begin lists */
+/* its very messy pls no judge, I made them as if they were all individual, not the same item oriented differently, when i shouldve been using classes */
+
+
+#listheading{
+    height: auto;
+    margin-bottom: 0px;
+    justify-content: space-around;
+}
+
+#lists {
+    background-color: darkgrey;
+    height: 300px;
+    margin-top: 0px;
+}
+
+#lists>div {
+    background-color: lightgrey;
+    margin: 10px;
+    flex: 1;
+}
+
+.alist>div{
+    background-color: slategrey;
+    flex: 1;
+    align-content: center;
+    transition: .2s;
+}
+
+/* ------------------------------------- */
+
+#list1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#list1>div:nth-child(odd){
+    background-color: white;
+}
+
+#list1>div:hover{
+    flex: 2;
+    background-color: darkslategrey;
+    color: white;
+}
+
+/* ------------------------------------- */
+
+#list2{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+#list2>div:nth-child(even){
+    background-color: white;
+}
+
+#list2>div:hover{
+    flex: 2;
+    background-color: darkslategrey;
+    color: white;
+}
+
+/* ------------------------------------- */
+
+#list3{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#list3>div:nth-child(odd){
+    background-color: white;
+}
+
+#list3>div:hover{
+    flex: 2;
+    background-color: darkslategrey;
+    color: white;
+}

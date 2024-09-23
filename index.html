@@ -1,72 +1,54 @@
 <!DOCTYPE html>
-<html lang="EN">
-
+<html>
 <head>
-    <title>Flexbox</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stupid boxes</title>
 
-    <style>
-        .flexcontainer {
-            display: flex;
-            justify-content: center;
-            background-color: lightgrey;
-        }
-        .bigflex{
-            display: flex;
-            width: 100vw;
-            height: 400px;
-            background-color: grey;
-            align-items: center;
-            justify-content: center;
-        }
-        #littleflex{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 200px;
-            width: 200px;
-
-        }
-        div{
-            margin: 10px;
-            padding: 20px;
-            font-size: 40px;
-            background-color: white;
-        }
-        #top{
-            display: flex;
-            justify-content: center;
-            background-color: darkgrey;
-            height: 20px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div id="head" class="flex">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
 
-    <header>
-        <div id="top">
+    <div id="center" class="flex">
+        <div>Click Me</div>
+    </div>
+    <div id="listheading" class="flex">
+        <h2>flex-direction: column</h2>
+        <h2>flex-direction: column-reverse</h2>
+        <h2>flex-direction: row</h2>
+    </div>
+
+    <div id="lists" class="flex">
+        <div id="list1" class="alist">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+
+        <div id="list2" class="alist">
             <div>a</div>
             <div>b</div>
             <div>c</div>
             <div>d</div>
             <div>e</div>
         </div>
-    </header>
 
-    <div class="flexcontainer">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
+        <div id="list3" class="alist">
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>0</div>
+        </div>
     </div>
 
-    <div class="bigflex">
-        <div id="littleflex">Item</div>
-    </div>
 </body>
-
 </html>
