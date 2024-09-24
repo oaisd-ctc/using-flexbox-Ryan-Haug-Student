@@ -1,3 +1,6 @@
+/* "seperate" documentation is at the bottom of the page in comments */
+/* list of psuedo and other req items at bottom */
+
 body {
     background-color: grey;
     overflow: hidden
@@ -14,7 +17,8 @@ h2 {
 }
 
 #head {
-    justify-content: space-between;
+    justify-content: space-between; 
+    /* makes the list at the top, the nav bar, have space inbetween */
 }
 
 #head>div {
@@ -25,6 +29,7 @@ h2 {
 
 #head>div:hover{
     background-color: aquamarine;
+    /* when hovering over heading items it changes the color */
 }
 
 #center {
@@ -33,6 +38,7 @@ h2 {
     align-items: center;
     justify-content: center;
     transition: .2s;
+    /* align and justify used to center the center element along with the transition being there to slow down the transition */
 }
 
 #center>div {
@@ -48,16 +54,17 @@ h2 {
     background-color: red;
     color: white;
     font-size: 32px;
+    /* when hovering the center the color will change to red with white text twice the size */
 }
 
 #center>div:active{
     background-color: green;
     scale: 4;
+    /* this psuedo class is used to change the button to green and 4x the size when you click the button */
 }
 
 
 /* begin lists */
-/* its very messy pls no judge, I made them as if they were all individual, not the same item oriented differently, when i shouldve been using classes */
 
 
 #listheading{
@@ -83,6 +90,10 @@ h2 {
     flex: 1;
     align-content: center;
     transition: .2s;
+}
+#list2>div:last-of-type{
+    background-color: grey;
+    /* this psuedo class is getting the last div item along the code in list 2 and setting it to grey background, but because its column reversed, it appears at the top */
 }
 
 /* ------------------------------------- */
@@ -138,3 +149,19 @@ h2 {
     background-color: darkslategrey;
     color: white;
 }
+
+
+/* 
+    flex propertys
+ - display: flex; | allows container item to be used for flex boxes along with the child
+ - justify-content: "value" | allows alignment of child objects on x axis
+ - flex: "number" | sets a objects size relative to other objects using a incrementing number system set by user
+ - align-items: "value" | allows for object alignment on the y axis
+ - transition: "value" | sets a time to transition between regular and suedo class
+ 
+    psuedo class time
+    :hover - changes when you hover over said item
+    :active - changes when you click on the element
+    :last-of-type - gets the last child element of the type and changes it
+
+*/
